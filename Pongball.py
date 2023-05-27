@@ -21,10 +21,10 @@ class ball(Turtle):
         self.forward(5)
 
     def reflection(self, d1, d2, ycoor):
-        if d1<10 or d2<10:
-            self.setheading(self.heading() -145)
+        if d1<20 or d2<20:
+            self.setheading(self.heading()+60)
         if ycoor<-180 or ycoor>180:
-            self.setheading(self.heading() + 45 - 180)
+            self.setheading(-self.heading())
     
     def reset(self):
         self.goto(0,0)
